@@ -21,6 +21,8 @@ const Mines = () => {
     const [azar, setAzar] = useState(Math.floor(Math.random() * azarChance))
     const [perdeu, setPerdeu] = useState(false)
 
+    useEffect(()=>{if(aposta > 90){setAposta(90)}},[aposta])
+
     useEffect(()=>{
         const userDB = JSON.parse(localStorage.getItem('user_token'))
         const DB = JSON.parse(localStorage.getItem('users_db'))
