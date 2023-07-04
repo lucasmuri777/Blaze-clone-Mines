@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { Head, Logo, Infos } from './styles'
 import useAuth from '../../../hooks/useAuth';
+import { FaRepeat} from 'react-icons/fa6'
 
 import { useNavigate } from 'react-router-dom';
 
@@ -35,7 +36,7 @@ const Header = () => {
     <Head>
         <Logo><h1 onClick={()=>{navigate('/home')}}>POOP GAMES</h1></Logo>
         <Infos>
-            <p><strong>{user}</strong> você tem <strong onClick={()=>{navigate('/recarregar')}}>{coins}$</strong> para gastar</p>
+            <p><FaRepeat onClick={()=>{setCoins(0)}}/><strong>&nbsp;{user}&nbsp; </strong> você tem <strong onClick={()=>{navigate('/recarregar')}}>&nbsp; {coins}$&nbsp; </strong> para gastar</p>
            <a onClick={handelSair}>sair</a>
         </Infos>
     </Head>

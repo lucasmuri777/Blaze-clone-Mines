@@ -30,6 +30,8 @@ export const Infos = styled.div`
     align-items: center;
     p{
         color: white;
+        display: flex;
+        align-items: center;
     }
     strong{
         cursor:pointer;
@@ -41,6 +43,13 @@ export const Infos = styled.div`
         border-radius: 5px;
         font-weight: 600;
         margin-left: 20px;
+        cursor: pointer;
+    }
+
+    svg{
+        margin: 0 10px;
+        margin-top: 3px;
+        font-size: 24px;
         cursor: pointer;
     }
 `
