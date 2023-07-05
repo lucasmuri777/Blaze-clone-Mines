@@ -6,7 +6,7 @@ import {PainelOff,GameOff,Minas, Painel, MineSingle, ControlMinas, ValorGanho, C
 import {FaX, FaPlus, FaMinus, FaPlay, FaStop, FaBomb, FaRepeat} from 'react-icons/fa6'
 import Container from '../../../components/layouts/Container'
 
-var azarChance = 1.53;
+var azarChance = 1.57;
 
 
 const Mines = () => {
@@ -73,6 +73,10 @@ const Mines = () => {
                 return;
             }
             blocos[clickPos].classList.add('selected')
+            let teste = aposta * 2
+            if(valorGanho >= teste){
+                setMultiplicador((mines * 0.042) + 1)
+            }
             let num = (valorGanho * multiplicador).toFixed(2)
             blocos[clickPos].innerHTML = `${num}`
             setValorGanho(num)
@@ -97,7 +101,7 @@ const Mines = () => {
         let bombas = []
 
         //setando o multiplicador
-        setMultiplicador((mines * 0.065) + 1)
+        setMultiplicador((mines * 0.062) + 1)
     
         //gerando as bombas aleatoriamentes
         let vec = mines + azar;
