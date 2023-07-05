@@ -184,7 +184,7 @@ const Mines = () => {
         {play &&(<PainelOff><FaStop onClick={handleStop}/></PainelOff>)}
             <ControlMinas>
                 <div className='control-wrapper'>
-                    <a className='more' onClick={()=>{mines < 4 ? setMines(mines + 1) : setMines(4)}}><FaPlus/></a>
+                    <a className='more' onClick={()=>{mines < 6 ? setMines(mines + 1) : setMines(6)}}><FaPlus/></a>
                     <a className='minus' onClick={()=>{mines > 1 ? setMines(mines - 1) : setMines(1)}}><FaMinus/></a>
                 </div>
                 <div className='minas-wrapper'><p>{mines}<span>Minas</span></p></div>
