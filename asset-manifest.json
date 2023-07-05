@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/Blaze-clone-Mines/static/js/main.9239be0e.js",
+    "main.js": "/Blaze-clone-Mines/static/js/main.4cc9a808.js",
     "static/media/png": "/Blaze-clone-Mines/static/media/20742bda52d2b13a33bf1e57182c5eb4.ab5308d328f84ddeead2.png",
     "index.html": "/Blaze-clone-Mines/index.html",
-    "main.9239be0e.js.map": "/Blaze-clone-Mines/static/js/main.9239be0e.js.map"
+    "main.4cc9a808.js.map": "/Blaze-clone-Mines/static/js/main.4cc9a808.js.map"
   },
   "entrypoints": [
-    "static/js/main.9239be0e.js"
+    "static/js/main.4cc9a808.js"
   ]
 }
