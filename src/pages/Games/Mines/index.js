@@ -6,7 +6,7 @@ import {PainelOff,GameOff,Minas, Painel, MineSingle, ControlMinas, ValorGanho, C
 import {FaX, FaPlus, FaMinus, FaPlay, FaStop, FaBomb, FaRepeat} from 'react-icons/fa6'
 import Container from '../../../components/layouts/Container'
 
-var azarChance = 1.545;
+var azarChance = 1.56;
 
 
 const Mines = () => {
@@ -106,7 +106,7 @@ const Mines = () => {
         //gerando as bombas aleatoriamentes
         let vec = mines + azar;
         for (let i = 0; i < vec; i++)  {
-            let num = Math.ceil(Math.random() * 19)
+            let num = Math.floor(Math.random() * 20)
             let teste = bombas.findIndex(element => element === num);
             if(teste != -1){
                --i
@@ -146,7 +146,7 @@ const Mines = () => {
         <Minas className='wrapper-mines'>
             {!play &&
             (
-            <GameOff perdeu={perdeu ? 'rgba(196, 45, 80, 0.7)' : 'rgba(15, 25, 35, 0.7)'}>
+            <GameOff perdeu={perdeu ? 'rgba(196, 45, 80, 0.55)' : 'rgba(15, 25, 35, 0.7)'}>
                 
                 {perdeu ?(
                     <>
