@@ -6,7 +6,7 @@ import {PainelOff,GameOff,Minas, Painel, MineSingle, ControlMinas, ValorGanho, C
 import {FaX, FaPlus, FaMinus, FaPlay, FaStop, FaBomb, FaRepeat} from 'react-icons/fa6'
 import Container from '../../../components/layouts/Container'
 
-var azarChance = 1.54;
+var azarChance = 1.545;
 
 
 const Mines = () => {
@@ -21,7 +21,7 @@ const Mines = () => {
     const [azar, setAzar] = useState(Math.floor(Math.random() * azarChance))
     const [perdeu, setPerdeu] = useState(false)
 
-    useEffect(()=>{if(aposta > 90){setAposta(90)}},[aposta])
+    useEffect(()=>{if(aposta > 200){setAposta(200)}},[aposta])
 
     useEffect(()=>{
         const userDB = JSON.parse(localStorage.getItem('user_token'))
@@ -182,9 +182,10 @@ const Mines = () => {
         </Minas>
         <Painel>
         {play &&(<PainelOff><FaStop onClick={handleStop}/></PainelOff>)}
+        {perdeu &&(<PainelOff></PainelOff>)}
             <ControlMinas>
                 <div className='control-wrapper'>
-                    <a className='more' onClick={()=>{mines < 6 ? setMines(mines + 1) : setMines(6)}}><FaPlus/></a>
+                    <a className='more' onClick={()=>{mines < 13 ? setMines(mines + 1) : setMines(13)}}><FaPlus/></a>
                     <a className='minus' onClick={()=>{mines > 1 ? setMines(mines - 1) : setMines(1)}}><FaMinus/></a>
                 </div>
                 <div className='minas-wrapper'><p>{mines}<span>Minas</span></p></div>

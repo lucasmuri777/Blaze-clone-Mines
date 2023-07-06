@@ -10,7 +10,7 @@ export const Minas = styled.div`
     align-items: center;
     flex-wrap: wrap;
     gap:15px;
-    padding: 15px 0;
+    padding: 17px 0;
     position: relative;
 
     .selected{
