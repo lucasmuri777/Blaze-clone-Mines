@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.js": "/Blaze-clone-Mines/static/js/main.0d8bfd50.js",
+    "main.js": "/Blaze-clone-Mines/static/js/main.d4a8e5bc.js",
     "static/media/png": "/Blaze-clone-Mines/static/media/20742bda52d2b13a33bf1e57182c5eb4.ab5308d328f84ddeead2.png",
+    "static/media/RoletaImage.png": "/Blaze-clone-Mines/static/media/RoletaImage.c6284853ce555e00c974.png",
     "index.html": "/Blaze-clone-Mines/index.html",
-    "main.0d8bfd50.js.map": "/Blaze-clone-Mines/static/js/main.0d8bfd50.js.map"
+    "main.d4a8e5bc.js.map": "/Blaze-clone-Mines/static/js/main.d4a8e5bc.js.map"
   },
   "entrypoints": [
-    "static/js/main.0d8bfd50.js"
+    "static/js/main.d4a8e5bc.js"
   ]
 }
