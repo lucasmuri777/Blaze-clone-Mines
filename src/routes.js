@@ -7,6 +7,7 @@ import Recarregar from './pages/Recarregar'
 
 import useAuth from './hooks/useAuth';
 import Mines from './pages/Games/Mines';
+import Roleta from './pages/Games/Roleta';
 
 const Private = ({Item}) =>{
    const { logar } = useAuth();
@@ -24,6 +25,7 @@ const Rotas = () => {
          <Route exact path="/login" element={<Login/>} />
          <Route path="/cadastro" element={<Cadastro/>} />
          <Route path="/mines" element={<Private Item={Mines}/>}/>
+         <Route path="/roleta" element={<Private Item={Roleta}/>}/>
          <Route path="*" element={<Login/>}/>
       </Routes>
      </Fragment>

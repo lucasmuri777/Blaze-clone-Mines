@@ -2,9 +2,9 @@ import React from 'react'
 
 import {Containerr} from './styles'
 
-const Container = ({children, quebra="nowrap"}) => {
+const Container = ({children, quebra="nowrap", display="block"}) => {
   return (
-    <Containerr quebra={quebra}>
+    <Containerr quebra={quebra} display={display}>
         {children}
     </Containerr>
   )

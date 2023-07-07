@@ -142,7 +142,7 @@ const Mines = () => {
   return (
     <>
       <Header/>
-      <Container quebra={"wrap"}> 
+      <Container quebra={"wrap"} display={"flex"}> 
         <Minas className='wrapper-mines'>
             {!play &&
             (
